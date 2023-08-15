@@ -16,7 +16,10 @@ int main(void)
 	{
 		putchar(z + '0');
 		if (z < 9)
+		{
 			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
