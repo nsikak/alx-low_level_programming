@@ -15,6 +15,8 @@ int main(void)
 	for (i = 'z'; i <= 'z'; i--)
 	{
 		putchar(i);
+		if (i == 'a')
+			break;
 	}
 	putchar('\n');
 	return (0);
