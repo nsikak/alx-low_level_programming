@@ -21,11 +21,13 @@ void print_diagonal(int n)
 			z = 1;
 			while (z < i)
 			{
-				_putchar('\n');
+				_putchar(32);
 				z++;
 			}
 		}
 		_putchar(92);
+		if (i != n)
+			_putchar('\n');
 	}
 	_putchar('\n');
 }
