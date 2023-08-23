@@ -1,29 +1,26 @@
 #include "main.h"
 
 /**
- * rev_string - resets a pointer
+ * puts_half - resets a pointer
  * Description: Just a function
  * Return: 0
- * @s: pointer params
+ * @str: pointer params
  */
 
-void rev_string(char *s)
+void puts_half(char *str)
 {
-	char t;
-	int i = 0;
-	int v  = 0;
+	int l = 0;
+	int s;
 
-	while (s[i] != '\0')
+	while (str[l] != '\0')
 	{
-		i++;
+		l++;
 	}
-	i--;
-	while (v < i)
+	s = (l + 1) / 2;
+
+	while (str[s] !=  '\0')
 	{
-		t = s[i];
-		s[i] = s[v];
-		s[v] = t;
-		i--;
-		v++;
+		_putchar(str[s]);
+		s++;
 	}
 }
