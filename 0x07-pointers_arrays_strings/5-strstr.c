@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strpbrk - strcat
+ * _strstr - strcat
  *Description: just a func
  *Return: char
- *@accept: dest
- *@s: src
+ *@haystack: dest
+ *@needle: src
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i;
 	unsigned int j;
