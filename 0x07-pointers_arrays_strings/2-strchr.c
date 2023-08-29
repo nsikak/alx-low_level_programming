@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strchr - strcat
  *Description: just a func
