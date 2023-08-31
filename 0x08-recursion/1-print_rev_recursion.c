@@ -1,24 +1,17 @@
 #include "main.h"
 
 /**
- *set_string - a recursive finction
+ *_print_rev_recursion- a recursive finction
  *Description: Recursion
  *Returns: null
  *@s: source
- *@to: dest
  */
 
-void set_string(char **s, char *to);
+void _print_rev_recursion(char *s);
 {
-	char temp;
-
 	if (*s != '\0')
 	{
-		temp = *s;
+		_print_rev_recursion(s + 1);
 		_putchar(*s);
-		s++;
-		_puts_recursion(s);
 	}
-	else
-		_putchar('\n');
 }
