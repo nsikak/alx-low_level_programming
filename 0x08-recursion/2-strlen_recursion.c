@@ -3,7 +3,7 @@
 /**
  *_strlen_recursion - a recursive finction
  *Description: Recursion
- *Returns: null
+ *Return: null
  *@s: source
  */
 
