@@ -5,5 +5,5 @@
 
 int _putchar(char c);
 void _puts_recursion(char *s);
-void set_string(char **s, char *to);
+void _print_rev_recursion(char *s);
 #endif
