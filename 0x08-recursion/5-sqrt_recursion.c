@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- *_pow_recursion - a recursive finction
+ *_sqrt_recursion - a recursive finction
  *Description: Recursion
  *Return: null
- *@x: base
- *@y: power
+ *@n: base
  */
 
-int _pow_recursion(int x, int y);
+int _sqrt_recursion(int n);
 {
-	if (y < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	else if (y == 0)
+
+	if (n == 0 || n == 1)
 	{
-		return (1);
+		return (n);
 	}
-	else
-	{
-		return (x * _pow_recursion(x, y - 1));
-	}
+
+	int mid = n / 2;
+
+	return (_sqrt_recursion(mid) == mid ? mid : _sqrt_recursion(mid + 1));
 }
