@@ -1,4 +1,3 @@
-char *_strncat(char *dest, char *src, int n)
-{
-	return (dest);
+char *_memset(char *s, char b, unsigned int n){
+	return (s);
 }
